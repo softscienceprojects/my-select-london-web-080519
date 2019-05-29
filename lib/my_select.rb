@@ -5,6 +5,8 @@ def my_select(collection)
  while i < collection.length
     if yield(collection[i]) == true
      my_collect << collection[i]
+   else
+     puts "else"
    end
      i += 1
  end
